@@ -37,3 +37,27 @@ factum/
 ```bash
 git clone https://github.com/SrGalletaEXT/factum.git
 cd factum
+```
+### **3. Levanta todos los servicios con Docker Compose**
+```bash
+docker-compose up --build -d
+```
+Esto inicia:
+
+MongoDB (puerto 27017)
+
+Mongo Express (http://localhost:8081)
+
+Backend (http://localhost:3000)
+
+Frontend (http://localhost:4200)
+
+### **4. Accede a los servicios**
+
+Frontend Angular: http://localhost:4200
+
+Backend API: http://localhost:3000
+
+Mongo Express: http://localhost:8081
+Usuario: admin | Contraseña: admin
+
