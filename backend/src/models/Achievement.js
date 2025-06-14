@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require('mongoose');
+import { Schema, model, Types } from 'mongoose';
 
 const achievementSchema = new Schema({
   game: { type: Types.ObjectId, ref: 'Game', required: true },
@@ -8,4 +8,4 @@ const achievementSchema = new Schema({
   points: Number,
 });
 
-module.exports = model('Achievement', achievementSchema);
+export default model('Achievement', achievementSchema);
