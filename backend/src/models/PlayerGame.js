@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require('mongoose');
+import { Schema, model, Types } from 'mongoose';
 
 const playerGameSchema = new Schema({
   player: { type: Types.ObjectId, ref: 'Player', required: true },
@@ -7,4 +7,4 @@ const playerGameSchema = new Schema({
 
 playerGameSchema.index({ player: 1, game: 1 }, { unique: true });
 
-module.exports = model('PlayerGame', playerGameSchema);
+export default model('PlayerGame', playerGameSchema);

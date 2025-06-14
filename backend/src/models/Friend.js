@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require('mongoose');
+import { Schema, model, Types } from 'mongoose';
 
 const friendSchema = new Schema({
   player: { type: Types.ObjectId, ref: 'Player', required: true },
@@ -7,4 +7,4 @@ const friendSchema = new Schema({
   friend_since: Number,
 });
 
-module.exports = model('Friend', friendSchema);
+export default model('Friend', friendSchema);
