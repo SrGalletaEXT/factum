@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+import { Schema, model } from 'mongoose';
 
 const playerSchema = new Schema({
   steamid: { type: String, unique: true, required: true },
@@ -21,4 +21,4 @@ const playerSchema = new Schema({
   locstatecode: String,
 });
 
-module.exports = model('Player', playerSchema);
+export default model('Player', playerSchema);

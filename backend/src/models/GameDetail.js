@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+import { Schema, model } from 'mongoose';
 
 const gameDetailSchema = new Schema({
   appid: { type: Number, unique: true, required: true },
@@ -29,4 +29,4 @@ const gameDetailSchema = new Schema({
   support_email: String,
 });
 
-module.exports = model('GameDetail', gameDetailSchema);
+export default model('GameDetail', gameDetailSchema);
