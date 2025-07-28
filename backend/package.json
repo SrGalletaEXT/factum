@@ -14,7 +14,11 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
-    "mongoose": "^8.15.0"
+    "express-session": "^1.17.3",
+    "cors": "^2.8.5",
+    "mongoose": "^8.15.0",
+    "passport": "^0.7.0",
+    "passport-steam": "^1.0.11"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

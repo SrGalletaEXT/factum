@@ -52,6 +52,19 @@ Backend (http://localhost:3000)
 
 Frontend (http://localhost:4200)
 
+### Autenticación con Steam
+
+El backend ahora utiliza `passport-steam` para permitir iniciar sesión con la cuenta de Steam. Configura las siguientes variables de entorno en el servicio **backend**:
+
+```
+STEAM_API_KEY=tu_clave_de_steam
+STEAM_RETURN_URL=http://localhost:3000/auth/steam/return
+STEAM_REALM=http://localhost:3000/
+SESSION_SECRET=alguna_clave_segura
+```
+
+Luego accede a `http://localhost:4200` y pulsa el botón **Login with Steam**.
+
 ### **4. Accede a los servicios**
 
 Frontend Angular: http://localhost:4200
