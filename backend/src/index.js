@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 const app = express();
 const PORT = process.env.PORT || 3000;
 const MONGO_URL = process.env.MONGO_URL || "mongodb://mongo:27017/factum";
+const STEAM_API_KEY = process.env.STEAM_API_KEY || '';
 
 // Middleware
 app.use(express.json());

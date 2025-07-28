@@ -38,7 +38,17 @@ factum/
 git clone https://github.com/SrGalletaEXT/factum.git
 cd factum
 ```
-### **3. Levanta todos los servicios con Docker Compose**
+### 3. **Configura `STEAM_API_KEY`**
+
+Crea un archivo `.env` en la raíz del proyecto con tu clave:
+
+```bash
+STEAM_API_KEY=tu_clave_de_steam
+```
+
+También puedes editar `docker-compose.yml` y colocar el valor directamente en el servicio `backend`.
+
+### **4. Levanta todos los servicios con Docker Compose**
 ```bash
 docker-compose up --build -d
 ```
@@ -52,7 +62,7 @@ Backend (http://localhost:3000)
 
 Frontend (http://localhost:4200)
 
-### **4. Accede a los servicios**
+### **5. Accede a los servicios**
 
 Frontend Angular: http://localhost:4200
 
