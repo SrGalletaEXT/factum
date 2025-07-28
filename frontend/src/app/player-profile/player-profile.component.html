@@ -1,0 +1,8 @@
+<div *ngIf="player; else loading">
+  <h2>{{ player.personaname }}</h2>
+  <img [src]="player.avatarfull" alt="avatar" />
+  <p>Steam ID: {{ player.steamid }}</p>
+</div>
+<ng-template #loading>
+  <p>Loading profile...</p>
+</ng-template>
