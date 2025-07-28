@@ -5,3 +5,4 @@ export { default as Friend } from './Friend.js';
 export { default as Achievement } from './Achievement.js';
 export { default as GameAchievement } from './GameAchievement.js';
 export { default as GameDetail } from './GameDetail.js';
+export { default as PlayerAchievement } from './PlayerAchievement.js';
