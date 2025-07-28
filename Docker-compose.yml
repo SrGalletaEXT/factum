@@ -29,6 +29,7 @@ services:
     environment:
       - PORT=3000
       - MONGO_URL=mongodb://mongo:27017/factum
+      - STEAM_API_KEY=${STEAM_API_KEY}
     depends_on:
       - mongo
 
